@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Video Similarity Detection using Deep Learning</title>
+
 </head>
 <body>
 
@@ -167,11 +167,9 @@ Overall Similarity Percentage: 30.00%</code></pre>
 </ul>
 
 <h2 id="contact">Contact</h2>
-<p>For any questions or suggestions, please contact <a href="mailto:your_email@example.com">your_email@example.com</a>.</p>
+<p>For any questions or suggestions, please contact <a href="mailto:yafsharghasemloo@gmail.com">yafsharghasemloo@gmail.com</a>.</p>
 
 <hr>
-
-<p><em>Please replace <code>your_email@example.com</code> with your actual email address.</em></p>
 
 <h1>Code</h1>
 <p>For reference, here is the main code of the script:</p>
