@@ -188,16 +188,6 @@ This program compares videos and finds similar videos using deep learning.
 Even if the video is manipulated or changed, it will recognize it.
 Optimizations have been made to improve performance.
 """
-
-# Configure TensorFlow to limit GPU memory usage (optional)
-# Uncomment the following lines if you experience GPU memory issues
-# physical_devices = tf.config.list_physical_devices('GPU')
-# if physical_devices:
-#     try:
-#         tf.config.experimental.set_memory_growth(physical_devices[0], True)
-#     except:
-#         pass
-
 # Define paths to your videos - you can add as many paths as you want
 folder_dir1 = 'D:\\Downloads\\videos\\Waterscape_5 and Animal_4.mp4'
 folder_dir2 = 'D:\\Downloads\\videos\\Animal_4.mp4'
@@ -347,10 +337,10 @@ def compare_videos(video_features, similarity_threshold=0.8):
     else:
         print("No comparisons were made across all videos.")
 
-# Process videos and extract features
+## Process videos and extract features
 video_features = process_videos(video_paths)
 
-# Compare videos based on extracted features
+## Compare videos based on extracted features
 compare_videos(video_features)
 </code></pre>
 
