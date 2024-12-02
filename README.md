@@ -188,16 +188,16 @@ This program compares videos and finds similar videos using deep learning.
 Even if the video is manipulated or changed, it will recognize it.
 Optimizations have been made to improve performance.
 """
-# Define paths to your videos - you can add as many paths as you want
+## Define paths to your videos - you can add as many paths as you want
 folder_dir1 = 'D:\\Downloads\\videos\\Waterscape_5 and Animal_4.mp4'
 folder_dir2 = 'D:\\Downloads\\videos\\Animal_4.mp4'
 video_paths = [folder_dir1, folder_dir2]
 
-# Base output directory for saving frames (optional)
+## Base output directory for saving frames (optional)
 base_output_folder = Path('D:\\Downloads\\video.frames.deep_learning')
 base_output_folder.mkdir(parents=True, exist_ok=True)
 
-# Load pre-trained MobileNetV2 model + higher level layers
+## Load pre-trained MobileNetV2 model + higher level layers
 base_model = MobileNetV2(weights='imagenet', include_top=False, pooling='avg')
 model = base_model  # Since we set pooling='avg', the output is already a feature vector
 
